@@ -7,13 +7,13 @@ import (
 
 func handlerFunc(w http.ResponseWriter, r *http.Request) {
 	if r.URL.Path == "/" {
-		fmt.Fprint(w, "<h1>Hello, 这里是 goblog</h1>")
+		fmt.Fprint(w, "<h1>Hello, hello my go pracice</h1>")
 	} else if r.URL.Path == "/about" {
-		fmt.Fprint(w, "此博客是用以记录编程笔记，如您有反馈或建议，请联系 "+
-			"<a href=\"mailto:summer@example.com\">summer@example.com</a>")
+		fmt.Fprint(w, "go blog practice"+
+			"<a href=\"mailto:jasonwu513@gmail.com\">jasonwu513@gmail.com</a>")
 	} else {
-		fmt.Fprint(w, "<h1>请求页面未找到 :(</h1>"+
-			"<p>如有疑惑，请联系我们。</p>")
+		fmt.Fprint(w, "<h1> page not found :(</h1>"+
+			"<p> if any problem please contact us。</p>")
 	}
 }
 
